@@ -36,6 +36,7 @@ requirements:
     - automake                      # [unix]
     - gettext                       # [unix]
     - libtool                       # [unix]
+    - m2-patch  # [win]
   host:
     - xorg-util-macros
 
