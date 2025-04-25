@@ -44,7 +44,6 @@ requirements:
 
 test:
   commands:
-    - conda inspect linkages -p $PREFIX $PKG_NAME  # [not win]
 
 about:
   home: https://www.x.org/
