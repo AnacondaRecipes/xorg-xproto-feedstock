@@ -1,4 +1,6 @@
 #! /bin/bash
+# Get an updated config.sub and config.guess
+cp $BUILD_PREFIX/share/gnuconfig/config.* .
 
 set -e
 set -x
@@ -30,7 +32,7 @@ if [ -n "$CYGWIN_PREFIX" ] ; then
         --force
         --install
         -I "$mprefix/share/aclocal"
-        -I "$BUILD_PREFIX_M/Library/mingw-w64/share/aclocal"
+        -I "$BUILD_PREFIX_M/Library/usr/share/aclocal"
     )
     autoreconf "${autoreconf_args[@]}"
 else
